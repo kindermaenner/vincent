@@ -1,0 +1,21 @@
+ 
+// Commands (ID_* and IDM_*) 
+HIDM_ABOUTBOX                           0x10010
+HID_TRAY                                0x10082
+HID_TRAY2                               0x10085
+HIDM_CHANGE_NAME                        0x10100
+HID_SHOW                                0x18003
+HID_INFO                                0x18004
+ 
+// Prompts (IDP_*) 
+HIDP_SOCKETS_INIT_FAILED                0x30067
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_VINCENT_DIALOG                     0x20066
+HIDD_CHANGE_USERNAME                    0x20084
+ 
+// Frame Controls (IDW_*) 
