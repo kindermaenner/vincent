@@ -1,12 +1,9 @@
 
-
-
-
 ////////////////////////////////////////////////////////////////
 // CTrayIcon Copyright 1996 Microsoft Systems Journal.
 //// If this code works, it was written by Paul DiLascia.
 // If not, I don't know who wrote it.
-#include "stdafx.h"
+#include "pch.h"
 #include "trayicon.h"
 #include <afxpriv.h>    // for AfxLoadString
 
@@ -46,7 +43,7 @@ void CTrayIcon::SetNotificationWnd(CWnd* pNotifyWnd, UINT uCbMsg)
 //
 BOOL CTrayIcon::SetIcon(UINT uID)
 {
-    HICON hicon=NULL;   
+	HICON hicon=NULL;   
 	if (uID) 
 	{      
 		AfxLoadString(uID, m_nid.szTip, sizeof(m_nid.szTip));      
@@ -112,7 +109,7 @@ LRESULT CTrayIcon::OnTrayNotification(WPARAM wID, LPARAM lEvent)
 	if (!pSubMenu)       
 		return 0;   
 	if (lEvent==WM_RBUTTONUP) 
-	{      
+	{
 		// Make first menu item the default (bold font)      
 		::SetMenuDefaultItem(pSubMenu->m_hMenu, 0, TRUE);     
 		// Display the menu at the current mouse location. There's a "bug"     
@@ -130,10 +127,3 @@ LRESULT CTrayIcon::OnTrayNotification(WPARAM wID, LPARAM lEvent)
 	return 1; 
 	// handled
 }
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 // DgramSocket.cpp : implementation file
 //
 
-#include "stdafx.h"
+#include "pch.h"
 #include "Vincent.h"
 #include "DgramSocket.h"
 #include "vincentdlg.h"

@@ -1,7 +1,7 @@
 // VincentDlg.cpp : implementation file
 //
 
-#include "stdafx.h"
+#include "pch.h"
 #include "Vincent.h"
 #include "VincentDlg.h"
 #include "dgramsocket.h"
@@ -110,7 +110,7 @@ CVincentDlg::CVincentDlg(CWnd* pParent /*=NULL*/)
 	//}}AFX_DATA_INIT
 	// Note that LoadIcon does not require a subsequent DestroyIcon in Win32
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
-	m_crLink = AfxGetApp()->LoadIcon(IDC_HAND);
+	m_crLink = AfxGetApp()->LoadIcon(IDC_HAND_VINCENT);
 	m_hTray = AfxGetApp()->LoadIcon(ID_TRAY);
 	m_hTray2 = AfxGetApp()->LoadIcon(ID_TRAY2);
 	m_pServer = NULL;
@@ -404,9 +404,10 @@ void CVincentDlg::OnTimer(UINT nIDEvent)
 	else if (nIDEvent == IDT_PING_TIMEOUT)
 	{
 		KillTimer (IDT_PING_TIMEOUT);
-		int nCnt = m_ctrlUser.GetCount ();
-		int *pIdx = new int [nCnt];
-		int nPos = 0;
+	int nCnt = m_ctrlUser.GetCount ();
+	int *pIdx = new int [nCnt];
+	int nPos = 0;
+	int i;
 		for (int i = 0; i < nCnt; i++)
 		{
 			if (!m_ctrlUser.GetItemData (i))

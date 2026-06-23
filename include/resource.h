@@ -14,7 +14,7 @@
 #define IDS_EDIT_LOG                    132
 #define ID_TRAY2                        133
 #define IDS_COPYRIGHT2                  133
-#define IDC_HAND                        134
+#define IDC_HAND_VINCENT                134
 #define IDS_COPYRIGHT1                  134
 #define IDM_CHANGE_NAME                 0x0100
 #define IDC_SEND                        1001

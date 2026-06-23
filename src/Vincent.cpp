@@ -1,7 +1,9 @@
 // Vincent.cpp : Defines the class behaviors for the application.
 //
 
-#include "stdafx.h"
+#include "pch.h"
+// Link with version.lib for file version APIs used in GetVersion()
+#pragma comment(lib, "version.lib")
 #include "Vincent.h"
 #include "VincentDlg.h"
 #include <LMCONS.H>
@@ -78,7 +80,7 @@ BOOL CVincentApp::InitInstance()
 	//  the specific initialization routines you do not need.
 
 #ifdef _AFXDLL
-	Enable3dControls();			// Call this when using MFC in a shared DLL
+	// Enable3dControls() is obsolete in modern MFC; removed.
 #else
 	Enable3dControlsStatic();	// Call this when linking to MFC statically
 #endif

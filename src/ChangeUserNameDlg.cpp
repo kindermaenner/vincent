@@ -1,7 +1,7 @@
 // ChangeUserNameDlg.cpp : implementation file
 //
 
-#include "stdafx.h"
+#include "pch.h"
 #include "Vincent.h"
 #include "ChangeUserNameDlg.h"
 

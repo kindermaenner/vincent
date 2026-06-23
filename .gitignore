@@ -1,5 +1,51 @@
-Debug
-Release
-log
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+*.vcxproj.user
 
+# Build folders (IDE and MSBuild outputs)
+**/Debug/
+**/Release/
+build/
+bin/
+obj/
+ipch/
 
+# Visual C++ intermediate and binary files
+*.obj
+*.o
+*.lib
+*.dll
+*.exe
+*.exp
+*.pdb
+*.ipdb
+*.ilk
+*.idb
+*.sbr
+*.suo
+
+# Precompiled headers and DBs
+*.pch
+*.sdf
+*.opensdf
+*.VC.db
+
+# VS Code
+.vscode/
+
+# Logs and backups
+*.log
+*.log.*
+*.bak
+*.old
+*~
+
+# OS generated files
+Thumbs.db
+desktop.ini
