@@ -3,7 +3,19 @@ Vincent
 
 Overview
 --------
-Vincent is a small legacy Windows MFC dialog application (originally Visual Studio 6) that provides a simple networked message exchange and tray/notification UI. The project was modernized to build with recent Visual Studio/MSVC toolsets while keeping original behaviour.
+Vincent is a small network-based messaging tool originally developed around the year 2000 to enable communication between students working within a company environment.
+
+At a time when modern messaging platforms did not yet exist in their current form, Vincent provided a simple way to stay connected using a lightweight UDP-based protocol and a Windows tray application.
+
+This repository contains a modernized version of the original Visual Studio 6 MFC application, updated to build with current MSVC toolchains while preserving its original behaviour.
+
+## Project background and purpose
+
+Vincent was born out of a very simple situation.
+
+At the time, we (Abraquax and Spex) were both working in the same company — one as a student, the other as an apprentice — sharing an office with several other students. As it often happens in such environments, people came and went. Projects changed, schedules shifted, and in a large organization it was easy to lose track of each other. 
+
+We wanted a simple way to stay in touch. So instead of relying on external tools (which were limited or non-existent in this form at the time), we built our own. And that was the moment Vincent was created.
 
 Key features
 ------------
@@ -99,4 +111,4 @@ Known issues & compatibility
 
 License
 -------
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
